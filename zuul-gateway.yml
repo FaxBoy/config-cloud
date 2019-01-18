@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: gateway
+    name: zuul-gateway
 
 #指定注册中心地址
 eureka:

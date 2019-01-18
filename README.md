@@ -2,7 +2,7 @@
 springcloud configuration
 
       
-    feign-service.yml : zuul网关
+    zuul-gateway.yml : zuul网关
     product-service.yml : 商品服务
     feign-service.yml : 订单服务
 
