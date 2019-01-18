@@ -1,5 +1,3 @@
-label: master
-
 server:
   port: 8791
 
