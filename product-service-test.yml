@@ -12,4 +12,5 @@ spring:
   application:
     name: product-service
 
-#jdbc
+#环境
+profile: test

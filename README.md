@@ -1,14 +1,15 @@
 # config-cloud
 springcloud configuration
 
-例子 
-/product-service.yml
 
-/{name}-{profiles}.properties
-/{name}-{profiles}.yml
-/{name}-{profiles}.json
-/{label}/{name}-{profiles}.yml
 
-name 服务器名称
-profile 环境名称，开发、测试、生产
-lable 仓库分支、默认master分支
+    /product-service.yml
+    /{application}/{profile}[/{label}]
+    /{application}-{profile}.yml
+    /{label}/{application}-{profile}.yml
+    /{application}-{profile}.properties
+    /{label}/{application}-{profile}.properties
+
+    application:表示应用名称,在client中通过spring.config.name配置
+    profile:表示获取指定环境下配置，例如开发环境、测试环境、生产环境 默认值default，实际开发中可以是 dev、test、demo、production等
+    label: git标签，默认值master
